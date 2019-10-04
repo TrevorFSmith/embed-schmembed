@@ -1,0 +1,94 @@
+{
+	"captures": [
+		{
+			"browser-configuration": {
+				"name": "Chrome 75",
+				"os": "Windows",
+				"osVersion": "10",
+				"browserName": "Chrome",
+				"browserVersion": "75.0",
+				"resolution": "1024x768"				
+			},
+			"sites": [
+				{
+					"name": "transmutable",
+					"url": "https://transmutable.com/?embed-schmembed=t",
+					"close-pause": 1
+				},
+				{
+					"name": "science-saints",
+					"url": "http://sciencesaints.com/?embed-schmembed=t",
+					"close-pause": 2
+				}
+			]
+		}
+	],
+	"formulations": [
+		{
+			"capture-name": "transmutable",
+			"formula-name": "transmutable",
+			"probe-basis": {
+				"dom-shape": {
+					"relative": {
+						"depth": 0,
+						"width": 0
+					},
+					"depth": 6,
+					"width": 13
+				},
+				"exceptions": {
+					"count": [0, 1]
+				},
+				"selector-count": {
+					"body h1": 1,
+					"body img": 4
+				},
+				"text-equals": {
+					"body h1": "Transmutable"
+				},
+				"performance": {
+					"DomContentLoaded": {
+						"value": [0, 2.5],
+						"subtract": "NavigationStart"
+					}
+				},
+				"heap": {
+					"embedScriptMemory": [0, 1000000]
+				}
+			}
+		},
+		{
+			"capture-name": "science-saints",
+			"formula-name": "science-saints",
+			"probe-basis": {
+				"dom-shape": {
+					"depth": 10,
+					"width": [12, 15],
+					"relative": {
+						"depth": 0,
+						"width": 0
+					}
+				},
+				"exceptions": {
+					"count": [0, 1]
+				},
+				"selector-count": {
+					"body h1": 1,
+					"body img": 6
+				},
+				"text-equals": {
+					".day-detail-deets > ul:nth-child(1) > h3:nth-child(1)": "Themes"
+				},
+				"performance": {
+					"DomContentLoaded": {
+						"value": [0, 2.5],
+						"subtract": "NavigationStart"
+					}
+				},
+				"heap": {
+					"embedScriptMemory": [0, 1000000]
+				}
+			}
+		}
+	]
+}

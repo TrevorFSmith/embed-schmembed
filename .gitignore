@@ -1,0 +1,10 @@
+# Build
+/node_modules
+/build
+
+# Web Embed Lab
+/captures
+/certs
+/page-formulas
+.env
+

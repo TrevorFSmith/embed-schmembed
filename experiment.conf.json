@@ -1,0 +1,53 @@
+{
+	"page-formulas": [
+		{ "name": "transmutable" },
+		{ "name": "science-saints" }
+	],
+	"browser-configurations": [
+		{
+			"name": "Chrome",
+			"os": "Windows",
+			"osVersion": "10",
+			"browserName": "Chrome",
+			"browserVersion": "75.0",
+			"resolution": "1024x768"
+		},
+		{
+			"name": "Firefox",
+			"os": "Windows",
+			"osVersion": "10",
+			"browserName": "Firefox",
+			"browserVersion": "68",
+			"resolution": "1024x768"
+		}
+	],
+	"test-runs" : [
+		{
+			"page-formulas": [
+				"transmutable",
+				"science-saints"
+			],
+			"test-probes": [
+				"dom-shape",
+				"exceptions",
+				"selector-count",
+				"text-equals",
+				"performance",
+				"heap"
+			],
+			"browsers": ["Chrome"]
+		},
+		{
+			"page-formulas": [
+				"science-saints"
+			],
+			"test-probes": [
+				"dom-shape",
+				"exceptions",
+				"selector-count",
+				"text-equals"
+			],
+			"browsers": ["Firefox"]
+		}
+	]
+}
