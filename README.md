@@ -12,7 +12,7 @@ Installation:
 	# Install dependencies, including WEL binaries
 	npm install
 	# Build embed script to test
-	npm build 
+	npm run build 
 	# Copy example WEL .env file
 	cp node_modules/web-embed-lab/dotenv.example .env
 	# Edit .env files with your Browserstack keys
